@@ -1,0 +1,17 @@
+<form>
+    <div>
+        <label for="email">Email address</label>
+        <input type="email" name="email" [(ngModel)]="email" required placeholder="Enter your email">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" [(ngModel)]="password" required id="password"
+            placeholder="Enter your password">
+    </div>
+
+    <div>
+        <br />
+        <button (click)="loginWithCognito()" class="btn btn-primary btn-block" type="submit"> Log In </button>
+    </div>
+</form>
+<p class="text-dark mb-0">Not a member?<a href="/sign-up" class="text-primary ml-1">Sign Up now</a></p>

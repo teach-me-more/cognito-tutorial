@@ -1,0 +1,27 @@
+<form>
+    <div>
+        <h1 style="color: blue;">Register with My APP</h1>
+    </div>
+    <div>
+        <label for="givenName">First Name</label>
+        <input type="text" name="givenName" [(ngModel)]="givenName" required placeholder="Enter your first name">
+    </div>
+    <div>
+        <label for="familyName">Last Name</label>
+        <input type="text" name="familyName" [(ngModel)]="familyName" required placeholder="Enter your last name">
+    </div>
+    <div>
+        <label for="email">Email address</label>
+        <input type="email" name="email" [(ngModel)]="email" required placeholder="Enter your email">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" [(ngModel)]="password" name="password" required placeholder="Enter your password">
+    </div>
+
+    <div>
+        <br />
+        <button (click)="register()" class="btn btn-primary btn-block" type="button"> Register </button>
+    </div>
+</form>
+<p class="text-dark mb-0">Already a member?<a href="/login" class="text-primary ml-1">Login</a></p>
